@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pedroarmas.controller.ProductoraController">
+   <children>
+      <Label layoutX="229.0" layoutY="14.0" text="Productora" textFill="#2a3286">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2e59bc" height="29.9" radius="13.7075" spread="0.06" width="26.93" />
+         </effect>
+      </Label>
+      <Label layoutX="34.0" layoutY="78.0" text="ID Productora">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbProductora" layoutX="158.0" layoutY="78.0" prefHeight="25.0" prefWidth="163.0" />
+      <Label layoutX="34.0" layoutY="122.0" text="Nombre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="158.0" layoutY="122.0" prefHeight="25.0" prefWidth="227.0" />
+      <TableView fx:id="tblProductoras" layoutX="17.0" layoutY="172.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="colIDProductora" prefWidth="118.0" text="ID Productora" />
+          <TableColumn fx:id="colNombreProductora" prefWidth="448.0" text="Nombre Productora" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="44.0" layoutY="386.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="43.0" prefWidth="79.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="385.0" layoutY="386.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="43.0" prefWidth="79.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="229.0" layoutY="386.0" mnemonicParsing="false" onAction="#editar" prefHeight="43.0" prefWidth="79.0" text="Editar" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.29" color="#181075" height="41.76" radius="27.792499999999997" width="71.41" />
+   </effect>
+</AnchorPane>
